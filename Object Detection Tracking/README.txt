@@ -18,3 +18,7 @@ OpenCV'de meanhift'i kullanmak için, önce hedefi ayarlamalı, histogramını b
 
 4- CamShift Algoritması
 Neredeyse meanshift ile aynıdır, ancak döndürülmüş bir dikdörtgen ve kutu parametreleri döndürür. Yani nensenin hareketine göre takip eden kutu da büyüyüp küçülür ve yönünü değiştirebilir.
+
+5- Arka Plan Bölümleme (Background Segmantation)
+Bir video içerindeki arka arkaya gelen video iki video çerçevesinin birbirinden çıkarılması yönetimidir. Bu yöntem ile nesneleri bulup takip ettirebiliriz. Bu yöntem oldukça hızlı çalışır ancak ışık ve gürültülere karşı çok hassastır.
+Bu yöntem opencv de cv2 kütüphanesi içerisindeki createBackgroundSubtractorMOG2 komutu ile kullanılır. Bu komut ile birlikte daha iyi sonuç alınabilmek için gürültü azaltmaya yarayan cv2 kütüphanesi içerisinde tanımlı medianBlur komutu ile kullanılabilir.
